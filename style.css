@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1F2937;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+p {
+    font-family: 'Inter', sans-serif;  
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding:0 36px;
+    width: 1100px;
+}
+
+/* Nav-section using bootstrap */
+
+.nav-links{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    padding-left: 224px;
+}
+.nav-link{
+    align-items: center;
+    font-weight: 450;
+    font-size: 1rem;
+    color: rgba(41,50,53,0.6);
+    border: 2px solid transparent;
+    justify-content: center;
+}
+.nav-link:hover{
+    color:#18d06c;
+    border-bottom: 2.2px solid #18d06c;
+}
+/* End of nav section */
+
+/* Hero section */
+
+.hero{
+    background-color:#f2f2f2 ;
+    padding:100px 0 20px;
+}
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}  
+/* search bar */
+
+.hero-action {
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+    padding: 0px 250px;
+}
+.search-grid{
+    display:flex;
+    gap: 8px;
+    background-color:white ;
+    border-radius: 18px;
+    padding: 28px;
+    align-items: center;
+}
+.search-iteam{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.search-label{
+    color: #293235;
+}
+.inputs{
+    background-color:#f2f1ec;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    display: flex;
+    padding:8px;
+    gap:18px;
+    align-items: center;
+}
+.inputs input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+}
+.search-btn {
+    background-color: #1f2a37;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.search-btn:hover {
+    background-color: #2c3e50;
+    transform: translateY(-2px);
+} 
+/* end of search-bar */
+
+.hero-image{
+    max-width: 100%;
+    width: 550px;
+   border-radius: 20px; 
+}
+.hero-content{
+   padding-top: 70px;
+}
+.hero-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1F2937; 
+}
+.hero-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+.hero-label{
+    color:rgba(38,56,64,0.7);
+}
+.hero-info{
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color:#293235;
+    line-height: 1.7;
+    max-width: 500px;
+}
+.car-card{
+    border-radius: 28px;
+    width: 400px;
+    height:300px;
+}
+
+.hero-action{
+    padding-bottom: 70px;
+} 
+/* End of hero section */
+
+/* About section */
+.about{
+    padding: 100px 0;
+    background-color:#f2f1ec;
+}
+.about-title{
+   align-items: center;
+   padding-bottom: 30px;
+}
+.lumina{
+    padding-left: 40%;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: rgba(38,56,64,0.7);
+}
+.design{
+    letter-spacing: 0.1rem;
+    color:rgba(0,0,0);
+    padding-left: 30%;
+}
+.about-grid{
+    display: inline-flex;
+    gap: 40px;
+    padding-top: 20px;
+}
+.badge{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px; 
+    width: 50px;          
+    text-align: left;
+    padding-left: 15px; 
+    font-size: medium;
+    color:black;
+                  
+}
+.badge-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgba(0,0,0);
+    padding-top: 15px;
+}
+.badge-info{
+    color:rgba(38,56,64,0.7);
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+/* End of about section */
+
+/* Book now section */
+.booknow{
+    padding: 100px 0;  
+}
+.book-grid{
+    display: flex;
+    gap:48px;
+}
+.rentallogo{
+    border-radius: 28px;
+}
+.booking-step{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.5);
+    padding-top: 15px;
+}
+.booking-method{
+    font-size: 1.4rem;
+    color: rgba(0,0,0);
+    padding-bottom: 10px;
+}
+.steps{
+    padding-top: 22px;
+}
+.num{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(38,56,64,0.4);
+    padding-right: 8px;
+}
+.step-title{
+    font-size:1.1rem;
+    font-weight: 550;
+}
+.step-info{
+    font-size: 0.9rem;
+    padding-left: 48px;
+}
+/* End of book now section */
+
+/* Contact section */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+} */
+/* End of contact section */
+
+/* Footer section */
+.site-footer{
+    padding: 100px 0;
+    background-color: #ffff;
+}
+.footer-grid{
+    display: flex;
+    gap: 78px;
+}
+.footerhero{
+    font-weight:700;
+    line-height: 1.4;
+    color:#293235;
+    padding: 10px;
+    padding-bottom: 8px;
+}
+
+.copyright{
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.3);
+}
+.highlight{
+    font-weight: 600;
+    font-size:0.95rem;
+}
+.list-dim{
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.3);
+}
+.Footer-contact{
+    background-color:rgba(229,227,218,0.5);
+    padding:16px;
+    border-radius:16px; 
+    width: 300px;
+}
+.joinus{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.offer{
+    font-size: 0.75rem;
+    color: rgba(0,0,0);
+}
+.Form-group{
+    padding-top: 8px;
+    display: flex;
+    gap:4px;
+}
+.Form-input{
+    background-color: #fff;
+    border: none;
+    padding: 6px;
+    border-radius: 9px;
+    outline: none;
+
+}
+.send{
+     background-color:rgba(38,56,64,0.8);
+     color:white;
+     padding:10px;
+     border-radius:8px;
+     cursor: pointer;
+     border: none;
+     
+}
+/* End of footer section */
