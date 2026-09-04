@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewpoint" content="width-device-width,initial-scale=1.0"/>
+        <title>Car Rentals</title>
+      
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <!-- External css -->
+        <link rel="stylesheet" href="style.css"/>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            
+            <!-- Navigation Bar using (Bootstrap)-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="#hero">Lumina Drive</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#car">Cars</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                        <a href="#car" class="btn btn-dark ms-3">Book Now</a>
+                    </div>
+                </div>
+            </nav>
+           <!-- end of nav-bar section -->
+
+            <!-- Hero section -->
+             <section class="hero" id="hero">
+                <div class="container">
+                    <div class="hero-grid">
+                        <div class="hero-content">
+                         <h1><span class="hero-title">Rent Your <span class="hero-label">Perfect Ride</span></span></h1>
+                         <p class="hero-info">
+                            Experience the road like never before with our premium<br>
+                            fleet. From electric city cruisers to rugged luxury SUVs, your
+                            effortless journey starts here.
+                        </p>
+                        </div>
+                          <div class="hero-image">
+                                        <img
+                                        src="assests/hero-image.jpg"
+                                        alt="hero image"
+                                        loading="lazy"
+                                        class="car-card"
+                                        width="400px"
+                                        height="300px"
+                                        />
+                                </div>
+                            </div>
+                            </div>
+
+                        <!--search-bar section -->
+                        <div class="hero-action">
+                        <div class="search-bar-container">
+                            <form class="search-form">
+                               <div class="search-grid">
+                                <!-- Pickup location -->
+                                <div class="search-iteam">  
+                                <label class="search-label">PICKUP LOCATION</label>
+                                <div class="inputs">
+                                
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <input
+                                type="text"
+                                placeholder="Where to?"
+                                required
+                                >
+                                
+                               </div> 
+                                </div>
+                                <!-- Pickup date -->
+                                <div class="search-iteam">  
+                                <label class="search-label">PICKUP DATE</label>
+                                <div class="inputs">
+                                <i class="fas fa-calendar-alt icon"></i>
+                                <input
+                                type="text"
+                                placeholder="mm/dd/yyyy"
+                                required
+                                >
+                               </div> 
+                                </div>
+                                <!-- Dropoff date -->
+                                <div class="search-iteam">  
+                                <label class="search-label">DROPOFF DATE</label>
+                                <div class="inputs">
+                                <i class="fas fa-calendar-alt icon"></i>
+                                <input
+                                type="text"
+                                placeholder="mm/dd/yyyy"
+                                required
+                                >
+                               </div> 
+                                </div>
+                                <div class="search-iteam">
+                                    <button class="search-btn" type="submit">
+                                        Search
+                                    </button>
+                                </div>
+
+                               </div>
+                            </form>
+                        </div>
+                    </div>
+                 <!-- end of serach-bar section -->
+                </div>
+             </section>
+             <!-- end of hero section -->
+
+             <!-- JavaScript car section -->
+              <section class="car" id="car">
+                <div class="container">
+                    <script src="cars_section.js"></script>
+                </div>
+              </section>
+            <!-- end of car section -->
+
+              <!-- About Section -->
+               <section class="about" id="about">
+                <div class="container">
+                      <div class="about-title">
+                        <span class="lumina">The lumina way</span>
+                        <h2 class="design">Design for your comfort</h2>
+                    </div>
+
+                   <div class="about-grid">
+                    <div class="about-content">
+                        <div class="badge">
+                       <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="badge-title">Trust</h3>
+                        <p class="badge-info">
+                        Verified vehicles and transparent
+                        contracts. We value your peace of mind
+                        above all else during your journey.
+                        </p>
+                    </div>
+
+                     <div class="about-content">
+                        <div class="badge">
+                        <i class="fa-solid fa-money-bill"></i>
+                        </div>
+                        <h3 class="badge-title">Affordability</h3>
+                        <p class="badge-info">
+                        Verified vehicles and transparent
+                        contracts. We value your peace of mind
+                        above all else during your journey.
+                        </p>
+                    </div>
+
+                     <div class="about-content">
+                        <div class="badge">
+                        <i class="fa-solid fa-headset"></i> 
+                        </div>
+                        <h3 class="badge-title">24/7 Support</h3>
+                        <p class="badge-info">
+                        Verified vehicles and transparent
+                        contracts. We value your peace of mind
+                        above all else during your journey.
+                        </p>
+                    </div>
+                   </div>
+                </div>
+               </section>
+               <!-- end of about section -->
+
+               <!-- book now section -->
+                <section class="booknow" id="booknow">
+                    <div class="container">
+                        <div class="book-grid">
+                            <img
+                            src="assests/rental-logo.png"
+                            width="400px"
+                            alt=""
+                            loading="lazy"
+                            class="rentallogo"
+                            />
+                            
+                            <div class="booking-steps">
+                                <span class="booking-step">step by step</span>
+                            <h2 class="booking-method">Your journey in three clicks</h2>
+                                <ul class="steps" >
+                                    <li>
+                                        <span class="num">01.</span>
+                                        <span class="step-title">Choose Car</span>
+                                        <p class="step-info">
+                                            Browse our exquisite collection and pick the<br>one that fits
+                                            your style and needs.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="step-title">Book Online</span>
+                                        <p class="step-info">
+                                            Secure your vehicle with our effortless booking<br> process and
+                                            flexible options.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <span class="num">03.</span>
+                                        <span class="step-title">Drive Away</span>
+                                        <p class="step-info">
+                                           Pick up your keys and hit the open road. Your<br>adventure
+                                           starts right here.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End of booknow section -->
+
+                <!--Contact Section-->
+            <section class="contact py-5" id="contact" style="background-color: #f2f1ec;">
+            <div class="container">
+                <h2 class="text-center mb-5 display-7 fw-bold">Voices of Adventure</h2>
+                
+                <div class="row g-4">
+                    
+                    <!-- Testimonial Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-120 shadow-sm border-0" style="border-radius: 20px;">
+                            <div class="card-body p-4">
+                                <p class="card-text fst-italic text-muted">
+                                    "The Dodge Challenger was absolutely pristine. The booking process 
+                                    was so fluid it felt like I was already on my vacation before I even left home."
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="assests/design director.jpg" 
+                                        class="rounded-circle me-3" 
+                                        width="50" height="50" alt="Sarah Mitchell">
+                                    <div>
+                                        <h6 class="mb-0">Sarah Mitchell</h6>
+                                        <small class="text-muted">Design Director</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <p class="card-text fst-italic text-muted">
+                                    "I've rented from many platforms, but Lumina Drive is 
+                                    in a league of its own. The Audi A4 was beautiful and the pickup was seamless."
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="assests/entrepreneur.jpg" 
+                                        class="rounded-circle me-3" 
+                                        width="50" height="50" alt="David Chen">
+                                    <div>
+                                        <h6 class="mb-0">David Chen</h6>
+                                        <small class="text-muted">Entrepreneur</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <p class="card-text fst-italic text-muted">
+                                    "Fantastic experience from start to finish. The customer support team 
+                                    went above and beyond to help me with my last minute changes."</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="assests/travel.jpg" 
+                                        class="rounded-circle me-3" 
+                                        width="50" height="50" alt="Elena Rodriguez"> <div>
+                                        <h6 class="mb-0">Elena Rodriguez</h6>
+                                        <small class="text-muted">Travel Blogger</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- End of contact section -->
+        </main>
+        <!-- Footer section -->
+         <footer class="site-footer" id="contact">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="Footer-hero">
+                        <a href="#hero" class="footerhero">
+                            Lumina Drive
+                        </a>
+                        <p class="copyright">
+                            © 2024 Lumina Drive. Effortless journeys begin here.
+                        </p>
+                    </div>
+                    <div class="Footer-copyrights">
+                        <ul class="company">
+                            <li class="highlight">Company</li>
+                            <li class="list-dim">Fleet</li>
+                            <li class="list-dim">Locations</li>
+                            <li class="list-dim"><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+
+                     <div class="Footer-copyrights">
+                        <ul class="company">
+                            <li class="highlight">Support</li>
+                            <li class="list-dim">FAQ</li>
+                            <li class="list-dim">Insurance</li>
+                            <li class="list-dim">Privacy Policy</li>
+                        </ul>
+                    </div>
+
+                     <div class="Footer-contact">
+                        <p class="joinus">Join our newsletter</p>
+                        <span class="offer">Get exculsive offers and travel inspriation</span>
+                            <div class="Form-group">
+                            <label for="Customer-Email">
+                            </label>
+                            <input 
+                            class="Form-input"
+                            name="Email"
+                            type="email"
+                            placeholder="Your email"
+                            required/>
+                             <button class="send">
+                               <i class="fa-solid fa-paper-plane"></i>
+                             </button>
+                            </div>
+                    </div>
+                </div> 
+            </div>
+         </footer>
+        <!-- End of footer -->
+         
+    <!--custom JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
